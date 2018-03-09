@@ -1,1 +1,18 @@
 # Maintainer: Arto Bendiken <arto@conreality.org>
+pkgname=conreality-sdk-dotnet
+pkgver=0.0.0
+pkgrel=0
+url=https://github.com/conreality/conreality.net
+pkgdesc="Conreality Software Development Kit (SDK) for .NET (C#, F#, VB.NET)."
+depends="mono"
+arch="noarch"
+license="Unlicense"
+
+build() {
+	# TODO
+	return 0
+}
+
+package() {
+	mkdir -p "$pkgdir"
+}

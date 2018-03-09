@@ -1,1 +1,18 @@
 # Maintainer: Arto Bendiken <arto@conreality.org>
+pkgname=conreality-sdk-ruby
+pkgver=0.0.0
+pkgrel=0
+url=https://github.com/conreality/conreality.rb
+pkgdesc="Conreality Software Development Kit (SDK) for Ruby."
+depends="ruby-libs"
+arch="noarch"
+license="Unlicense"
+
+build() {
+	# TODO
+	return 0
+}
+
+package() {
+	mkdir -p "$pkgdir"
+}

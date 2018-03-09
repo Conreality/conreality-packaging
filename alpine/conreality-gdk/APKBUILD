@@ -1,1 +1,18 @@
 # Maintainer: Arto Bendiken <arto@conreality.org>
+pkgname=conreality-gdk
+pkgver=0.0.0
+pkgrel=0
+url=https://github.com/conreality/conreality-gdk
+pkgdesc="Conreality Game Development Kit (GDK)."
+depends="lua5.3-libs"
+arch="noarch"
+license="Unlicense"
+
+build() {
+	# TODO
+	return 0
+}
+
+package() {
+	mkdir -p "$pkgdir"
+}

@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/conreality-sdk
 pkgdesc="Conreality Software Development Kit (SDK) for C++."
 depends="libstdc++"
+makedepends="build-base"
 arch="all"
 license="Unlicense"
 

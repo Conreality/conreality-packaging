@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/conreality-master
 pkgdesc="Conreality master daemon."
 depends=""
+makedepends="elixir"
 arch="noarch"
 license="Unlicense"
 

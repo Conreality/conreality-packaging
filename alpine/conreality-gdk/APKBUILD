@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/conreality-gdk
 pkgdesc="Conreality Game Development Kit (GDK)."
 depends="lua5.3-libs"
+makedepends="lua5.3-dev"
 arch="noarch"
 license="Unlicense"
 

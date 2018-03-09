@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/cli.conreality.org
 pkgdesc="Conreality Command-Line Interface (CLI) documentation."
 depends=""
+makedepends="py3-sphinx"
 arch="noarch"
 license="Unlicense"
 

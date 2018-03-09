@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality
 pkgdesc="TODO"
 depends="conreality-ddk conreality-gdk conreality-hal conreality-sdk"
+makedepends=""
 arch="noarch"
 license="Unlicense"
 

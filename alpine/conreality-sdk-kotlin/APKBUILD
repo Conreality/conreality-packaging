@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/conreality.kt
 pkgdesc="Conreality Software Development Kit (SDK) for Kotlin."
 depends="openjdk8-jre-base"
+makedepends="openjdk8"
 arch="noarch"
 license="Unlicense"
 

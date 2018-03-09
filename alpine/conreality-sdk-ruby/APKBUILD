@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/conreality.rb
 pkgdesc="Conreality Software Development Kit (SDK) for Ruby."
 depends="ruby-libs"
+makedepends="ruby-dev"
 arch="noarch"
 license="Unlicense"
 

@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/ddk.conreality.org
 pkgdesc="Conreality Driver Development Kit (DDK) documentation."
 depends=""
+makedepends="py3-sphinx"
 arch="noarch"
 license="Unlicense"
 

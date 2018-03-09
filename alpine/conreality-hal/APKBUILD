@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/conreality-hal
 pkgdesc="Conreality Hardware Abstraction Layer (HAL)."
 depends="libstdc++"
+makedepends="build-base"
 arch="all"
 license="Unlicense"
 

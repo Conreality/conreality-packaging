@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/conreality-cli
 pkgdesc="Conreality Command-Line Interface (CLI)."
 depends=""
+makedepends=""
 arch="noarch"
 license="Unlicense"
 

@@ -5,6 +5,7 @@ pkgrel=0
 url=https://github.com/conreality/conreality.sql
 pkgdesc="Conreality Software Development Kit (SDK) for SQL."
 depends=""
+makedepends=""
 arch="noarch"
 license="Unlicense"
 

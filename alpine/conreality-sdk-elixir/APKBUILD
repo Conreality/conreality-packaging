@@ -10,8 +10,8 @@ depends="elixir"
 makedepends=""
 install=""
 subpackages=""
-source=""
-builddir="$srcdir/"
+source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality.ex/archive/51049d5.tar.gz"
+builddir="$srcdir/conreality.ex-51049d5a08106b595556d788c4d658f003e588a0"
 
 build() {
 	# TODO

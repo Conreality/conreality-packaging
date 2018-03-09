@@ -10,8 +10,8 @@ depends="openjdk8-jre-base"
 makedepends="openjdk8"
 install=""
 subpackages=""
-source=""
-builddir="$srcdir/"
+source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality.kt/archive/1cb007f.tar.gz"
+builddir="$srcdir/conreality.kt-1cb007f7aa4c9a9845b97892a628fa4bc6781ed3"
 
 build() {
 	# TODO

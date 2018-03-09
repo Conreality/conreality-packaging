@@ -10,8 +10,8 @@ depends="python3"
 makedepends="python3-dev py3-setuptools py3-pytest"
 install=""
 subpackages=""
-source=""
-builddir="$srcdir/"
+source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality.py/archive/e98818e.tar.gz"
+builddir="$srcdir/conreality.py-e98818ea1fce42634c8b05c15ec806d9071f9968"
 
 build() {
 	# TODO

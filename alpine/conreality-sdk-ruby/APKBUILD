@@ -10,8 +10,8 @@ depends="ruby-libs"
 makedepends="ruby-dev"
 install=""
 subpackages=""
-source=""
-builddir="$srcdir/"
+source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality.rb/archive/e5c3078.tar.gz"
+builddir="$srcdir/conreality.rb-e5c3078fa020a66979028ed6f6558ce985d8109d"
 
 build() {
 	# TODO

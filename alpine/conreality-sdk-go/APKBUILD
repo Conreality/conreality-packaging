@@ -10,8 +10,8 @@ depends="go"
 makedepends=""
 install=""
 subpackages=""
-source=""
-builddir="$srcdir/"
+source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality.go/archive/6f647eb.tar.gz"
+builddir="$srcdir/conreality.go-6f647ebf9a1faae926baf470f810a7e5ef3d738c"
 
 build() {
 	# TODO

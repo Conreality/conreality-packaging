@@ -10,8 +10,8 @@ depends="libstdc++"
 makedepends="build-base"
 install=""
 subpackages=""
-source=""
-builddir="$srcdir/"
+source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality-ddk/archive/d86c65e.tar.gz"
+builddir="$srcdir/conreality-ddk-d86c65ef73f4f39c73945bbdd0cd7ab37867c1c4"
 
 build() {
 	# TODO

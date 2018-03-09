@@ -10,8 +10,8 @@ depends=""
 makedepends=""
 install=""
 subpackages=""
-source=""
-builddir="$srcdir/"
+source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality.sql/archive/7a89b7c.tar.gz"
+builddir="$srcdir/conreality.sql-7a89b7c6d4649fffb4b68332c45296ccdd6c96c3"
 
 build() {
 	# TODO

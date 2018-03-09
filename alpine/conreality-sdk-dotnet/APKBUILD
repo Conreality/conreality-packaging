@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="1be6026bc76810f3c4fd98ff61315b033d2f2ba2deb6448d3c7baa54980f61b10826950adfde159e145bac9b2d16fef9edeebc9e436ea284e154b11f330b1625  conreality-sdk-dotnet-0.0.0.tar.gz"

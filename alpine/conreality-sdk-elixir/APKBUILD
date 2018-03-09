@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="50678eef4a6b58e85b7511bf18a4ea360753d45ae7c4f9251c0a289d817442e71a0e132d470ee92501c5aff1db5e360bb98d58961b0ea84415eaf6933e3df393  conreality-sdk-elixir-0.0.0.tar.gz"

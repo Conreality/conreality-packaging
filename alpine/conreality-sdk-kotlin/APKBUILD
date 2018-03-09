@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="8fec4ffc1b79a173e5d28dfcc7bef43a1408539483f194c1218b81742ab1afc652c21ff130776656c9720a856eb43335ae4f9202618aadb06938042e5c65010a  conreality-sdk-kotlin-0.0.0.tar.gz"

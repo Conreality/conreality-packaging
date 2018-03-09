@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="65001cd6849a18e2eefcb12694d5658606610dc478d388a31e1bb71ae3c931646e8aca8450b28b01cc4179af19ccb7c0391a04e5de96859a6a61e7d428b73009  conreality-slave-0.0.0.tar.gz"

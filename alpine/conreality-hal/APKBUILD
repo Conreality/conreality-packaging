@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="378034d3322d61ead0b66aedeb71ec8b76f88c976778b107ad36414ddd6c596f691e062ffa711be90f5ceaa93f2aeaae6b2a725c0b950cc1d029e94784c11703  conreality-hal-0.0.0.tar.gz"

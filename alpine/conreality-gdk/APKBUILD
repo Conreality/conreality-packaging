@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="794a01992f6609c59a974bbc52ecb97dabbc19bed5254205998ad456ad3b025a256d589d1e448611745627cf48f86d20752e6167f86c78050a79cae54e74765d  conreality-gdk-0.0.0.tar.gz"

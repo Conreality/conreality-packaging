@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="4f7215eb2d78262cb0f0d52be42ab8cbc7e5f2a1fe825a3f007fc26c2f60e95564ca022369897d74eb5957148b7dc4a0c6593c9bf0baa4a8cc9c2c91b104cece  conreality-ddk-0.0.0.tar.gz"

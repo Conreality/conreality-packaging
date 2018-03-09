@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="8c24e9312e3370a2b296d5af04e9642a77e05dd4688d60dc55bc249220b2d68b4ac5b19c72b0c5401fc317e0be0b26471037a022a9804da3ebb9244f2219ca88  conreality-master-0.0.0.tar.gz"

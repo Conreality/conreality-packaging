@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="3649b58e1dc3ab87075f7246d408e27eff0b0a31fbac2a14f96a64dd2e60caee5491661f2453e28c4b0a21b414215df9ece72a05f0172a03e2001064b7bf2b58  conreality-sdk-sql-0.0.0.tar.gz"

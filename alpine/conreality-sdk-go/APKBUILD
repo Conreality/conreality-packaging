@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="feb3623ec39ff7a8d6b87fa071d35b2dc29d22589bf4a8b4e98cf2680bf06921f8645d3b6077cbb975098b9d34ae0e13866d317e4d8baaf4b147a588300d6e29  conreality-sdk-go-0.0.0.tar.gz"

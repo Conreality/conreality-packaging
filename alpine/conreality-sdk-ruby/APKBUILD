@@ -21,3 +21,5 @@ build() {
 package() {
 	mkdir -p "$pkgdir"
 }
+
+sha512sums="204debd3837ab7a3749ad01961a700806270775a41ee57fddf3656716940fc1f1d01145e5f6108a2704ae9e402bcf4dc08bd33281583b248f1801a9800e895f4  conreality-sdk-ruby-0.0.0.tar.gz"

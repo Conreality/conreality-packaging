@@ -4,7 +4,7 @@ pkgver=0.0.0
 pkgrel=0
 url=https://github.com/conreality
 pkgdesc="TODO"
-depends=""
+depends="conreality-cli-doc conreality-ddk-doc conreality-gdk-doc conreality-hal-doc conreality-sdk-doc"
 arch="noarch"
 license="Unlicense"
 

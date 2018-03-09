@@ -1,0 +1,18 @@
+# Maintainer: Arto Bendiken <arto@conreality.org>
+pkgname=conreality-cli-doc
+pkgver=0.0.0
+pkgrel=0
+url=https://github.com/conreality/cli.conreality.org
+pkgdesc="Conreality Command-Line Interface (CLI) documentation."
+depends=""
+arch="noarch"
+license="Unlicense"
+
+build() {
+	# TODO
+	return 0
+}
+
+package() {
+	mkdir -p "$pkgdir"
+}

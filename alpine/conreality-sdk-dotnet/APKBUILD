@@ -8,6 +8,7 @@ arch="noarch"
 license="Unlicense"
 depends="mono"
 makedepends="mono-dev"
+checkdepends=""
 install=""
 subpackages=""
 source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality.net/archive/79b320c.tar.gz"
@@ -15,6 +16,10 @@ builddir="$srcdir/conreality.net-79b320c1f2e32bbd330698c7239c2ead73b728ed"
 
 build() {
 	# TODO
+	return 0
+}
+
+check() {
 	return 0
 }
 

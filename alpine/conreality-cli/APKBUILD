@@ -8,6 +8,7 @@ arch="noarch"
 license="Unlicense"
 depends=""
 makedepends=""
+checkdepends=""
 install=""
 subpackages=""
 source=""
@@ -15,6 +16,10 @@ builddir="$srcdir/"
 
 build() {
 	# TODO
+	return 0
+}
+
+check() {
 	return 0
 }
 

@@ -8,6 +8,7 @@ arch="all"
 license="Unlicense"
 depends="libstdc++"
 makedepends="build-base"
+checkdepends=""
 install=""
 subpackages=""
 source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality-sdk/archive/6754cc4.tar.gz"
@@ -15,6 +16,10 @@ builddir="$srcdir/conreality-sdk-6754cc498df51dfed3220fed2dbb3181d15e3809"
 
 build() {
 	# TODO
+	return 0
+}
+
+check() {
 	return 0
 }
 

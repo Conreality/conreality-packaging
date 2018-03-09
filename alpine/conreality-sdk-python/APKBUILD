@@ -7,7 +7,8 @@ url=https://github.com/conreality/conreality.py
 arch="noarch"
 license="Unlicense"
 depends="python3"
-makedepends="python3-dev py3-setuptools py3-pytest"
+makedepends="python3-dev py3-setuptools"
+checkdepends="py3-pytest"
 install=""
 subpackages=""
 source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality.py/archive/e98818e.tar.gz"
@@ -15,6 +16,10 @@ builddir="$srcdir/conreality.py-e98818ea1fce42634c8b05c15ec806d9071f9968"
 
 build() {
 	# TODO
+	return 0
+}
+
+check() {
 	return 0
 }
 

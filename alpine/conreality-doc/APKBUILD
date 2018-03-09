@@ -8,6 +8,7 @@ arch="noarch"
 license="Unlicense"
 depends="conreality-cli-doc conreality-ddk-doc conreality-gdk-doc conreality-hal-doc conreality-sdk-doc"
 makedepends=""
+checkdepends=""
 install=""
 subpackages=""
 source=""
@@ -15,6 +16,10 @@ builddir="$srcdir/"
 
 build() {
 	# meta package
+	return 0
+}
+
+check() {
 	return 0
 }
 

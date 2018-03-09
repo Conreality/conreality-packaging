@@ -8,6 +8,7 @@ arch="noarch"
 license="Unlicense"
 depends=""
 makedepends="elixir"
+checkdepends=""
 install=""
 subpackages=""
 source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality-master/archive/8b1697a.tar.gz"
@@ -15,6 +16,10 @@ builddir="$srcdir/conreality-master-8b1697a3fa3cc1496a1e53b76782852823beb4f1"
 
 build() {
 	# TODO
+	return 0
+}
+
+check() {
 	return 0
 }
 

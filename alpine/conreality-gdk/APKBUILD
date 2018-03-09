@@ -8,6 +8,7 @@ arch="noarch"
 license="Unlicense"
 depends="lua5.3-libs"
 makedepends="lua5.3-dev"
+checkdepends=""
 install=""
 subpackages=""
 source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality-gdk/archive/9be0ff9.tar.gz"
@@ -15,6 +16,10 @@ builddir="$srcdir/conreality-gdk-9be0ff99bdc5ab9071fc91e33f9fad52ef636617"
 
 build() {
 	# TODO
+	return 0
+}
+
+check() {
 	return 0
 }
 

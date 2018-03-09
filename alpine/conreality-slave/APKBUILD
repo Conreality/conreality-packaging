@@ -8,6 +8,7 @@ arch="noarch"
 license="Unlicense"
 depends="conreality-hal"
 makedepends="elixir"
+checkdepends=""
 install=""
 subpackages=""
 source="$pkgname-$pkgver.tar.gz::https://github.com/conreality/conreality-slave/archive/cdd52e7.tar.gz"
@@ -15,6 +16,10 @@ builddir="$srcdir/conreality-slave-cdd52e7014ee67c677e8b1fcf3971f67e1442af1"
 
 build() {
 	# TODO
+	return 0
+}
+
+check() {
 	return 0
 }
 

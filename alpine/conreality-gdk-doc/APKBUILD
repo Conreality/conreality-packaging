@@ -2,12 +2,16 @@
 pkgname=conreality-gdk-doc
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/gdk.conreality.org
 pkgdesc="Conreality Game Development Kit (GDK) documentation"
-depends=""
-makedepends="py3-sphinx"
+url=https://github.com/conreality/gdk.conreality.org
 arch="noarch"
 license="Unlicense"
+depends=""
+makedepends="py3-sphinx"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

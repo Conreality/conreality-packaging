@@ -2,12 +2,16 @@
 pkgname=conreality-sdk-sql
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality.sql
 pkgdesc="Conreality Software Development Kit (SDK) for SQL"
-depends=""
-makedepends=""
+url=https://github.com/conreality/conreality.sql
 arch="noarch"
 license="Unlicense"
+depends=""
+makedepends=""
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

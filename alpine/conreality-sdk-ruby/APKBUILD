@@ -2,12 +2,16 @@
 pkgname=conreality-sdk-ruby
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality.rb
 pkgdesc="Conreality Software Development Kit (SDK) for Ruby"
-depends="ruby-libs"
-makedepends="ruby-dev"
+url=https://github.com/conreality/conreality.rb
 arch="noarch"
 license="Unlicense"
+depends="ruby-libs"
+makedepends="ruby-dev"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

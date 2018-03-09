@@ -2,12 +2,16 @@
 pkgname=conreality-cli
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality-cli
 pkgdesc="Conreality Command-Line Interface (CLI)"
-depends=""
-makedepends=""
+url=https://github.com/conreality/conreality-cli
 arch="noarch"
 license="Unlicense"
+depends=""
+makedepends=""
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

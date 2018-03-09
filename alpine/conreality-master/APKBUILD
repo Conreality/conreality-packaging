@@ -2,12 +2,16 @@
 pkgname=conreality-master
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality-master
 pkgdesc="Conreality master daemon"
-depends=""
-makedepends="elixir"
+url=https://github.com/conreality/conreality-master
 arch="noarch"
 license="Unlicense"
+depends=""
+makedepends="elixir"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

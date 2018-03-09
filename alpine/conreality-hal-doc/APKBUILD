@@ -2,12 +2,16 @@
 pkgname=conreality-hal-doc
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/hal.conreality.org
 pkgdesc="Conreality Hardware Abstraction Layer (HAL) documentation"
-depends=""
-makedepends="py3-sphinx"
+url=https://github.com/conreality/hal.conreality.org
 arch="noarch"
 license="Unlicense"
+depends=""
+makedepends="py3-sphinx"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

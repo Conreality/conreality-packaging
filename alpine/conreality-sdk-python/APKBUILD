@@ -2,12 +2,16 @@
 pkgname=conreality-sdk-python
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality.py
 pkgdesc="Conreality Software Development Kit (SDK) for Python"
-depends="python3"
-makedepends="python3-dev py3-setuptools py3-pytest"
+url=https://github.com/conreality/conreality.py
 arch="noarch"
 license="Unlicense"
+depends="python3"
+makedepends="python3-dev py3-setuptools py3-pytest"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

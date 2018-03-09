@@ -2,12 +2,16 @@
 pkgname=conreality-sdk
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality-sdk
 pkgdesc="Conreality Software Development Kit (SDK) for C++"
-depends="libstdc++"
-makedepends="build-base"
+url=https://github.com/conreality/conreality-sdk
 arch="all"
 license="Unlicense"
+depends="libstdc++"
+makedepends="build-base"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

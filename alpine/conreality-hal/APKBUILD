@@ -2,12 +2,16 @@
 pkgname=conreality-hal
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality-hal
 pkgdesc="Conreality Hardware Abstraction Layer (HAL)"
-depends="libstdc++"
-makedepends="build-base"
+url=https://github.com/conreality/conreality-hal
 arch="all"
 license="Unlicense"
+depends="libstdc++"
+makedepends="build-base"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

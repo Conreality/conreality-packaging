@@ -2,12 +2,16 @@
 pkgname=conreality-ddk
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality-ddk
 pkgdesc="Conreality Driver Development Kit (DDK) for C++"
-depends="libstdc++"
-makedepends="build-base"
+url=https://github.com/conreality/conreality-ddk
 arch="all"
 license="Unlicense"
+depends="libstdc++"
+makedepends="build-base"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

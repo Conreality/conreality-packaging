@@ -2,12 +2,16 @@
 pkgname=conreality-dev
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality
 pkgdesc="TODO"
-depends="conreality-ddk conreality-gdk conreality-hal conreality-sdk"
-makedepends=""
+url=https://github.com/conreality
 arch="noarch"
 license="Unlicense"
+depends="conreality-ddk conreality-gdk conreality-hal conreality-sdk"
+makedepends=""
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# meta package

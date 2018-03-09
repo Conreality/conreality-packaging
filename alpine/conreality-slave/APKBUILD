@@ -2,12 +2,16 @@
 pkgname=conreality-slave
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality-slave
 pkgdesc="Conreality slave daemon"
-depends="conreality-hal"
-makedepends="elixir"
+url=https://github.com/conreality/conreality-slave
 arch="noarch"
 license="Unlicense"
+depends="conreality-hal"
+makedepends="elixir"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

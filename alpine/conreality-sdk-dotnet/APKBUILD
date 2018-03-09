@@ -2,12 +2,16 @@
 pkgname=conreality-sdk-dotnet
 pkgver=0.0.0
 pkgrel=0
-url=https://github.com/conreality/conreality.net
 pkgdesc="Conreality Software Development Kit (SDK) for .NET (C#, F#, VB.NET)"
-depends="mono"
-makedepends="mono-dev"
+url=https://github.com/conreality/conreality.net
 arch="noarch"
 license="Unlicense"
+depends="mono"
+makedepends="mono-dev"
+install=""
+subpackages=""
+source=""
+builddir="$srcdir/"
 
 build() {
 	# TODO

@@ -55,3 +55,11 @@ macOS
 We bottle for x86-64 (``x86_64``) on macOS 10.13 ("High Sierra").
 
 *(To be written.)*
+
+* https://docs.brew.sh/Taps
+* https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap
+* https://docs.brew.sh/Bottles
+* https://github.com/Homebrew/brew/blob/master/docs/Taps.md
+* https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md
+* https://github.com/Homebrew/brew/blob/master/docs/Bottles.md
+* https://github.com/Homebrew/legacy-homebrew/issues/31812

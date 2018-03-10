@@ -29,3 +29,5 @@ package() {
 	mkdir -p "$pkgdir/etc/apk/keys"
 	install -Dm444 "$srcdir/$source" "$pkgdir/etc/apk/keys/"
 }
+
+sha512sums="e63c34409c3e8867cc3d7cc61431104cedff225778f98efbde3e5f323b011bb1e9e057cc1d312a900796ab370371074bb7305bf37f230c45b04c87034b3bf2b4  arto@conreality.org-5aa268e7.rsa.pub"

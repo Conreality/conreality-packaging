@@ -1,0 +1,31 @@
+# Maintainer: Arto Bendiken <arto@conreality.org>
+pkgname=conreality-keys
+pkgver=2018.03.10
+pkgrel=0
+pkgdesc="Public keys for Conreality.org packages"
+url=https://github.com/conreality/conreality-packaging
+arch="noarch"
+license="Unlicense"
+depends=""
+makedepends=""
+checkdepends=""
+install=""
+subpackages=""
+source="arto@conreality.org-5aa268e7.rsa.pub"
+builddir="$srcdir/"
+
+build() {
+	# meta package
+	return 0
+}
+
+check() {
+	return 0
+}
+
+package() {
+	mkdir -p "$pkgdir/usr/share/apk/keys"
+	install -Dm444 "$srcdir/$source" "$pkgdir/usr/share/apk/keys/"
+	mkdir -p "$pkgdir/etc/apk/keys"
+	install -Dm444 "$srcdir/$source" "$pkgdir/etc/apk/keys/"
+}

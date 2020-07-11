@@ -1,0 +1,6 @@
+[submodule "homebrew"]
+	path = homebrew
+	url = https://github.com/conreality/homebrew-conreality.git
+[submodule "scoop"]
+	path = scoop
+	url = https://github.com/conreality/scoop-conreality.git

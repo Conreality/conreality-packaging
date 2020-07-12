@@ -24,22 +24,56 @@ VIAddVersionKey  CompanyName "Conreality Ltd."
 VIAddVersionKey  Comments "https://sdk.conreality.dev"
 
 InstallDir "$PROGRAMFILES64\Conreality\SDK"
+InstallDirRegKey HKCU Software\Conreality\SDK ""
+RequestExecutionLevel admin
 
+;Remember the installer language
+!define MUI_LANGDLL_REGISTRY_ROOT "HKCU"
+!define MUI_LANGDLL_REGISTRY_KEY "Software\Conreality\SDK"
+!define MUI_LANGDLL_REGISTRY_VALUENAME "Installer Language"
+
+!define MUI_ICON "${NSISDIR}\Contrib\Graphics\Icons\modern-install.ico" ; TODO
+!define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
+!define MUI_BGCOLOR 303030
+!define MUI_TEXTCOLOR FFFFFF
+!define MUI_WELCOMEFINISHPAGE_BITMAP "${NSISDIR}\Contrib\Graphics\Wizard\win.bmp" ; TODO
+!define MUI_HEADERIMAGE
+!define MUI_HEADERIMAGE_BITMAP "${NSISDIR}\Contrib\Graphics\Header\nsis.bmp" ; TODO
+
+!define MUI_FINISHPAGE_NOAUTOCLOSE
+!define MUI_FINISHPAGE_LINK "Conreality SDK documentation (sdk.conreality.dev)"
+!define MUI_FINISHPAGE_LINK_LOCATION "https://sdk.conreality.dev"
+!define MUI_FINISHPAGE_LINK_COLOR FFFFFF
+!define MUI_FINISHPAGE_NOREBOOTSUPPORT
+
+!insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "${SDK}/UNLICENSE"
 !insertmacro MUI_PAGE_COMPONENTS
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
+!insertmacro MUI_PAGE_FINISH
 
 !insertmacro MUI_UNPAGE_CONFIRM
 !insertmacro MUI_UNPAGE_INSTFILES
 
+!insertmacro MUI_LANGUAGE "English" ; default
+!insertmacro MUI_LANGUAGE "Russian"
+!insertmacro MUI_LANGUAGE "Ukrainian"
+
+!insertmacro MUI_RESERVEFILE_LANGDLL
+
 Section
   SetOutPath $INSTDIR
+  WriteRegStr HKCU Software\Conreality\SDK "" $INSTDIR
   WriteUninstaller $INSTDIR\Uninstall.exe
   File README.txt
   File /oname=LICENSE.txt ${SDK}/UNLICENSE
   File /oname=VERSION.txt ${SDK}/VERSION
 SectionEnd
+
+Function .onInit
+  !insertmacro MUI_LANGDLL_DISPLAY
+FunctionEnd
 
 Section "Library"
   SetOutPath $INSTDIR
@@ -75,4 +109,9 @@ Section "Uninstall"
   RMDir /r $INSTDIR\Headers
   RMDir /r $INSTDIR\Libraries
   RMDir $INSTDIR
+  DeleteRegKey /ifempty HKCU Software\Conreality\SDK
 SectionEnd
+
+Function un.onInit
+  !insertmacro MUI_UNGETLANGUAGE
+FunctionEnd

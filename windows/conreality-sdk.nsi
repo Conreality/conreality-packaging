@@ -2,18 +2,17 @@
 
 !include MUI2.nsh
 
-!define SDK "../../conreality-sdk"
 !define /file VERSION "${SDK}/VERSION"
 
 SetCompressor /solid /final lzma
-OutFile "installer.exe"
+OutFile "${OUTFILE}"
 
 Name "Conreality SDK"
-Caption "Conreality SDK ${VERSION} Setup"
+Caption "Conreality SDK ${VERSION} (${TARGET}) Setup"
 Unicode true
 
 VIProductVersion "${VERSION}.0"
-VIAddVersionKey  OriginalFilename "installer.exe"
+VIAddVersionKey  OriginalFilename "${OUTFILE}"
 VIAddVersionKey  FileDescription "Conreality SDK Installer"
 VIAddVersionKey  FileVersion "${VERSION}"
 VIAddVersionKey  ProductName "Conreality Software Development Kit"
@@ -66,7 +65,7 @@ Section
   SetOutPath $INSTDIR
   WriteRegStr HKCU Software\Conreality\SDK "" $INSTDIR
   WriteUninstaller $INSTDIR\Uninstall.exe
-  File README.txt
+  File /oname=README.txt conreality-sdk/README.txt
   File /oname=LICENSE.txt ${SDK}/UNLICENSE
   File /oname=VERSION.txt ${SDK}/VERSION
 SectionEnd

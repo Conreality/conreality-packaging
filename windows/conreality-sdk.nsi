@@ -2,6 +2,8 @@
 
 !include MUI2.nsh
 
+!include "conreality-sdk/${TARGET}.nsh"
+
 !define /file VERSION "${SDK}/VERSION"
 
 SetCompressor /solid /final lzma
@@ -82,9 +84,11 @@ Section
   SetRegView 32
   WriteRegStr HKLM Software\Conreality\SDK "" $INSTDIR
   WriteRegStr HKLM Software\Conreality\SDK "Version" "${VERSION}"
+  WriteRegStr HKLM Software\Conreality\SDK "Build" "${TARGET}"
   SetRegView 64
   WriteRegStr HKLM Software\Conreality\SDK "" $INSTDIR
   WriteRegStr HKLM Software\Conreality\SDK "Version" "${VERSION}"
+  WriteRegStr HKLM Software\Conreality\SDK "Build" "${TARGET}"
   WriteUninstaller $INSTDIR\Uninstall.exe
   File /oname=README.txt conreality-sdk/README.txt
   File /oname=LICENSE.txt ${SDK}/UNLICENSE
@@ -95,14 +99,14 @@ SectionGroup "Library"
 Section "Shared Runtime Library"
   SetOutPath $INSTDIR
   CreateDirectory $INSTDIR\Libraries
-  File /oname=Libraries\conreality.dll ${SDK}/build/windows/x86_64/conreality.dll
-  File /oname=Libraries\conreality.lib ${SDK}/build/windows/x86_64/conreality.lib
-  File /oname=Libraries\conreality.pdb ${SDK}/build/windows/x86_64/conreality.pdb
+  File /oname=Libraries\conreality.dll ${SDK}/${BUILDDIR}/conreality.dll
+  File /oname=Libraries\conreality.lib ${SDK}/${BUILDDIR}/conreality.lib
+  File /oname=Libraries\conreality.pdb ${SDK}/${BUILDDIR}/conreality.pdb
 SectionEnd
 Section "Static Development Library"
   SetOutPath $INSTDIR
   CreateDirectory $INSTDIR\Libraries
-  File /oname=Libraries\libconreality.lib ${SDK}/build/windows/x86_64/libconreality.lib
+  File /oname=Libraries\libconreality.lib ${SDK}/${BUILDDIR}/libconreality.lib
 SectionEnd
 SectionGroupEnd
 
